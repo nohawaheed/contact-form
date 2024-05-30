@@ -280,7 +280,6 @@ export default function ContactForm() {
               onBlur={formik.handleBlur}
               value={formik.values.message}
               onChange={formik.handleChange}
-              type="text"
               name="message"
               id="message"
             />
