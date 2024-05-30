@@ -82,6 +82,7 @@ export default function ContactForm() {
                 onChange={formik.handleChange}
                 type="text"
                 name="firstName"
+                id="firstName"
               />
               {formik.touched.firstName && formik.errors.firstName ? (
                 <div className="text-danger">{formik.errors.firstName}</div>
@@ -114,6 +115,7 @@ export default function ContactForm() {
                 onChange={formik.handleChange}
                 type="text"
                 name="lastName"
+                id="lastName"
               />
               {formik.touched.lastName && formik.errors.lastName ? (
                 <div className="text-danger">{formik.errors.lastName}</div>
@@ -148,6 +150,7 @@ export default function ContactForm() {
               onChange={formik.handleChange}
               type="text"
               name="email"
+              id="email"
             />
             {formik.touched.email && formik.errors.email ? (
               <div className="text-danger">{formik.errors.email}</div>
@@ -279,6 +282,7 @@ export default function ContactForm() {
               onChange={formik.handleChange}
               type="text"
               name="message"
+              id="message"
             />
             {formik.touched.message && formik.errors.message ? (
               <div className="text-danger">{formik.errors.message}</div>
