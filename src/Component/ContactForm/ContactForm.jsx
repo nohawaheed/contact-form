@@ -156,13 +156,7 @@ export default function ContactForm() {
               <div className="text-danger">{formik.errors.email}</div>
             ) : null}
           </div>
-          <div
-            className="row"
-            id="queryType"
-            value={formik.values.query}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          >
+          <div className="row">
             <label htmlFor="query" className="form-label col-12">
               Query Type
               <span
@@ -204,6 +198,7 @@ export default function ContactForm() {
                   value="General Enquiry"
                   checked={formik.values.query === "General Enquiry"}
                   onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                 />
                 <label
                   className="form-check-label w-100"
@@ -242,6 +237,7 @@ export default function ContactForm() {
                   value="Support Request"
                   checked={formik.values.query === "Support Request"}
                   onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                 />
                 <label
                   className="form-check-label w-100"
