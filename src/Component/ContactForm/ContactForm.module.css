@@ -1,0 +1,28 @@
+.main_color {
+  background-color: var(--light-green);
+}
+
+.btn_color {
+  background-color: var(--green) !important;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: var(--dark-grey) !important;
+  }
+}
+
+.success_color {
+  background-color: var(--dark-grey);
+}
+
+.header_color {
+  color: var(--dark-grey);
+}
+
+.text_color {
+  color: var(--light-green) !important;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
