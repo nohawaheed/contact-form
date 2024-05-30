@@ -33,7 +33,7 @@ export default function ContactForm() {
     },
     validationSchema: formSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
       setIsFormSubmitted(true);
       setTimeout(() => {
         setIsFormSubmitted(false);
